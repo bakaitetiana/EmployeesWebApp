@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Show Employee</title>
+    <link rel="stylesheet" href="/static/content/style.css">
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+	<b>Here you can see the list of employees</b> 
+    <div id="container">
+
+        <ul name="liked_list" id="liked_list">
+            {%for i in range(0, list_length)%}
+
+            <li>{{list_of_emp[i]}}</li>
+            {%endfor%}
+        </ul>
+
+
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>

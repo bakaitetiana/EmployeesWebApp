@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Delete form</title>
+  <link rel="stylesheet" href="/static/content/style.css">
+  
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+        <div id="container">
+
+            <form id="Registration" method="post" action="{{ url_for('delEmpDB')}}">
+
+                <div class="field">
+                    <label for="name">First name:</label><input type="text" name="name">
+                    <br><hr>
+                </div>
+                <div class="field">
+                    <label for="surname">Last name:</label><input type="text" name="surname">
+                    <br><hr>
+                </div>
+                <div class="field">
+                    <label for="jobid">Job id:</label><input type="number" name="jobid">
+                    <br><hr>
+                </div>
+
+                <div class="field">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
